@@ -10,6 +10,7 @@ pipeline {
 				echo 'Building...'
 				echo "PATH=${PATH}"
 				echo "MAVEN_HOME=${MAVEN_HOME}"
+				sh 'mvn clean install'
 			}
 		}
 		stage ('Test') {
