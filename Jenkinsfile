@@ -29,8 +29,8 @@ pipeline {
 			archive "target/**/*"
 			junit "target/surefire-reports/*.xml"
 		}
-		success {
-			mail subject:"pues ha ido ok" to:"franciscofc@ocu.es" from:"franciscofc@ocu.es"
-		}
+	//	success {
+	//		mail subject:"pues ha ido ok" to:"franciscofc@ocu.es" from:"franciscofc@ocu.es"
+	//	}
 	}
 }
